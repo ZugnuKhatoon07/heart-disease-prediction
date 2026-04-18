@@ -1,0 +1,155 @@
+[
+    {
+        "label": "streamlit",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "streamlit",
+        "description": "streamlit",
+        "detail": "streamlit",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "joblib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "joblib",
+        "description": "joblib",
+        "detail": "joblib",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "model = joblib.load(\"knn_heart\")\nscaler = joblib.load(\"heart_scaler.pkl\")\nexpected_columns = joblib.load(\"heart_columns.pkl\")\nst.title(\"Heart Stroke Prediction by Zugnu❤️\")\nst.markdown(\"Provide the following details to check your heart stroke risk:\")\n# Collect user input\nage = st.slider(\"Age\", 18, 100, 40)\nsex = st.selectbox(\"Sex\", [\"M\", \"F\"])\nchest_pain = st.selectbox(\"Chest Pain Type\", [\"ATA\", \"NAP\", \"TA\", \"ASY\"])\nresting_bp = st.number_input(\"Resting Blood Pressure (mm Hg)\", 80, 200, 120)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "scaler = joblib.load(\"heart_scaler.pkl\")\nexpected_columns = joblib.load(\"heart_columns.pkl\")\nst.title(\"Heart Stroke Prediction by Zugnu❤️\")\nst.markdown(\"Provide the following details to check your heart stroke risk:\")\n# Collect user input\nage = st.slider(\"Age\", 18, 100, 40)\nsex = st.selectbox(\"Sex\", [\"M\", \"F\"])\nchest_pain = st.selectbox(\"Chest Pain Type\", [\"ATA\", \"NAP\", \"TA\", \"ASY\"])\nresting_bp = st.number_input(\"Resting Blood Pressure (mm Hg)\", 80, 200, 120)\ncholesterol = st.number_input(\"Cholesterol (mg/dL)\", 100, 600, 200)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "expected_columns",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "expected_columns = joblib.load(\"heart_columns.pkl\")\nst.title(\"Heart Stroke Prediction by Zugnu❤️\")\nst.markdown(\"Provide the following details to check your heart stroke risk:\")\n# Collect user input\nage = st.slider(\"Age\", 18, 100, 40)\nsex = st.selectbox(\"Sex\", [\"M\", \"F\"])\nchest_pain = st.selectbox(\"Chest Pain Type\", [\"ATA\", \"NAP\", \"TA\", \"ASY\"])\nresting_bp = st.number_input(\"Resting Blood Pressure (mm Hg)\", 80, 200, 120)\ncholesterol = st.number_input(\"Cholesterol (mg/dL)\", 100, 600, 200)\nfasting_bs = st.selectbox(\"Fasting Blood Sugar > 120 mg/dL\", [0, 1])",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "age = st.slider(\"Age\", 18, 100, 40)\nsex = st.selectbox(\"Sex\", [\"M\", \"F\"])\nchest_pain = st.selectbox(\"Chest Pain Type\", [\"ATA\", \"NAP\", \"TA\", \"ASY\"])\nresting_bp = st.number_input(\"Resting Blood Pressure (mm Hg)\", 80, 200, 120)\ncholesterol = st.number_input(\"Cholesterol (mg/dL)\", 100, 600, 200)\nfasting_bs = st.selectbox(\"Fasting Blood Sugar > 120 mg/dL\", [0, 1])\nresting_ecg = st.selectbox(\"Resting ECG\", [\"Normal\", \"ST\", \"LVH\"])\nmax_hr = st.slider(\"Max Heart Rate\", 60, 220, 150)\nexercise_angina = st.selectbox(\"Exercise-Induced Angina\", [\"Y\", \"N\"])\noldpeak = st.slider(\"Oldpeak (ST Depression)\", 0.0, 6.0, 1.0)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "sex",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "sex = st.selectbox(\"Sex\", [\"M\", \"F\"])\nchest_pain = st.selectbox(\"Chest Pain Type\", [\"ATA\", \"NAP\", \"TA\", \"ASY\"])\nresting_bp = st.number_input(\"Resting Blood Pressure (mm Hg)\", 80, 200, 120)\ncholesterol = st.number_input(\"Cholesterol (mg/dL)\", 100, 600, 200)\nfasting_bs = st.selectbox(\"Fasting Blood Sugar > 120 mg/dL\", [0, 1])\nresting_ecg = st.selectbox(\"Resting ECG\", [\"Normal\", \"ST\", \"LVH\"])\nmax_hr = st.slider(\"Max Heart Rate\", 60, 220, 150)\nexercise_angina = st.selectbox(\"Exercise-Induced Angina\", [\"Y\", \"N\"])\noldpeak = st.slider(\"Oldpeak (ST Depression)\", 0.0, 6.0, 1.0)\nst_slope = st.selectbox(\"ST Slope\", [\"Up\", \"Flat\", \"Down\"])",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "chest_pain",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "chest_pain = st.selectbox(\"Chest Pain Type\", [\"ATA\", \"NAP\", \"TA\", \"ASY\"])\nresting_bp = st.number_input(\"Resting Blood Pressure (mm Hg)\", 80, 200, 120)\ncholesterol = st.number_input(\"Cholesterol (mg/dL)\", 100, 600, 200)\nfasting_bs = st.selectbox(\"Fasting Blood Sugar > 120 mg/dL\", [0, 1])\nresting_ecg = st.selectbox(\"Resting ECG\", [\"Normal\", \"ST\", \"LVH\"])\nmax_hr = st.slider(\"Max Heart Rate\", 60, 220, 150)\nexercise_angina = st.selectbox(\"Exercise-Induced Angina\", [\"Y\", \"N\"])\noldpeak = st.slider(\"Oldpeak (ST Depression)\", 0.0, 6.0, 1.0)\nst_slope = st.selectbox(\"ST Slope\", [\"Up\", \"Flat\", \"Down\"])\n# When Predict is clicked",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "resting_bp",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "resting_bp = st.number_input(\"Resting Blood Pressure (mm Hg)\", 80, 200, 120)\ncholesterol = st.number_input(\"Cholesterol (mg/dL)\", 100, 600, 200)\nfasting_bs = st.selectbox(\"Fasting Blood Sugar > 120 mg/dL\", [0, 1])\nresting_ecg = st.selectbox(\"Resting ECG\", [\"Normal\", \"ST\", \"LVH\"])\nmax_hr = st.slider(\"Max Heart Rate\", 60, 220, 150)\nexercise_angina = st.selectbox(\"Exercise-Induced Angina\", [\"Y\", \"N\"])\noldpeak = st.slider(\"Oldpeak (ST Depression)\", 0.0, 6.0, 1.0)\nst_slope = st.selectbox(\"ST Slope\", [\"Up\", \"Flat\", \"Down\"])\n# When Predict is clicked\nif st.button(\"Predict\"):",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "cholesterol",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "cholesterol = st.number_input(\"Cholesterol (mg/dL)\", 100, 600, 200)\nfasting_bs = st.selectbox(\"Fasting Blood Sugar > 120 mg/dL\", [0, 1])\nresting_ecg = st.selectbox(\"Resting ECG\", [\"Normal\", \"ST\", \"LVH\"])\nmax_hr = st.slider(\"Max Heart Rate\", 60, 220, 150)\nexercise_angina = st.selectbox(\"Exercise-Induced Angina\", [\"Y\", \"N\"])\noldpeak = st.slider(\"Oldpeak (ST Depression)\", 0.0, 6.0, 1.0)\nst_slope = st.selectbox(\"ST Slope\", [\"Up\", \"Flat\", \"Down\"])\n# When Predict is clicked\nif st.button(\"Predict\"):\n    # Create a raw input dictionary",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "fasting_bs",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "fasting_bs = st.selectbox(\"Fasting Blood Sugar > 120 mg/dL\", [0, 1])\nresting_ecg = st.selectbox(\"Resting ECG\", [\"Normal\", \"ST\", \"LVH\"])\nmax_hr = st.slider(\"Max Heart Rate\", 60, 220, 150)\nexercise_angina = st.selectbox(\"Exercise-Induced Angina\", [\"Y\", \"N\"])\noldpeak = st.slider(\"Oldpeak (ST Depression)\", 0.0, 6.0, 1.0)\nst_slope = st.selectbox(\"ST Slope\", [\"Up\", \"Flat\", \"Down\"])\n# When Predict is clicked\nif st.button(\"Predict\"):\n    # Create a raw input dictionary\n    raw_input = {",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "resting_ecg",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "resting_ecg = st.selectbox(\"Resting ECG\", [\"Normal\", \"ST\", \"LVH\"])\nmax_hr = st.slider(\"Max Heart Rate\", 60, 220, 150)\nexercise_angina = st.selectbox(\"Exercise-Induced Angina\", [\"Y\", \"N\"])\noldpeak = st.slider(\"Oldpeak (ST Depression)\", 0.0, 6.0, 1.0)\nst_slope = st.selectbox(\"ST Slope\", [\"Up\", \"Flat\", \"Down\"])\n# When Predict is clicked\nif st.button(\"Predict\"):\n    # Create a raw input dictionary\n    raw_input = {\n        'Age': age,",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "max_hr",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "max_hr = st.slider(\"Max Heart Rate\", 60, 220, 150)\nexercise_angina = st.selectbox(\"Exercise-Induced Angina\", [\"Y\", \"N\"])\noldpeak = st.slider(\"Oldpeak (ST Depression)\", 0.0, 6.0, 1.0)\nst_slope = st.selectbox(\"ST Slope\", [\"Up\", \"Flat\", \"Down\"])\n# When Predict is clicked\nif st.button(\"Predict\"):\n    # Create a raw input dictionary\n    raw_input = {\n        'Age': age,\n        'RestingBP': resting_bp,",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "exercise_angina",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "exercise_angina = st.selectbox(\"Exercise-Induced Angina\", [\"Y\", \"N\"])\noldpeak = st.slider(\"Oldpeak (ST Depression)\", 0.0, 6.0, 1.0)\nst_slope = st.selectbox(\"ST Slope\", [\"Up\", \"Flat\", \"Down\"])\n# When Predict is clicked\nif st.button(\"Predict\"):\n    # Create a raw input dictionary\n    raw_input = {\n        'Age': age,\n        'RestingBP': resting_bp,\n        'Cholesterol': cholesterol,",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "oldpeak",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "oldpeak = st.slider(\"Oldpeak (ST Depression)\", 0.0, 6.0, 1.0)\nst_slope = st.selectbox(\"ST Slope\", [\"Up\", \"Flat\", \"Down\"])\n# When Predict is clicked\nif st.button(\"Predict\"):\n    # Create a raw input dictionary\n    raw_input = {\n        'Age': age,\n        'RestingBP': resting_bp,\n        'Cholesterol': cholesterol,\n        'FastingBS': fasting_bs,",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "st_slope",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "st_slope = st.selectbox(\"ST Slope\", [\"Up\", \"Flat\", \"Down\"])\n# When Predict is clicked\nif st.button(\"Predict\"):\n    # Create a raw input dictionary\n    raw_input = {\n        'Age': age,\n        'RestingBP': resting_bp,\n        'Cholesterol': cholesterol,\n        'FastingBS': fasting_bs,\n        'MaxHR': max_hr,",
+        "detail": "app",
+        "documentation": {}
+    }
+]
