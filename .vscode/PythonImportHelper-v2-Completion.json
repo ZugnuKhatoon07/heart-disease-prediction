@@ -31,7 +31,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "model = joblib.load(\"knn_heart\")\nscaler = joblib.load(\"heart_scaler.pkl\")\nexpected_columns = joblib.load(\"heart_columns.pkl\")\nst.title(\"Heart Stroke Prediction by Zugnu❤️\")\nst.markdown(\"Provide the following details to check your heart stroke risk:\")\n# Collect user input\nage = st.slider(\"Age\", 18, 100, 40)\nsex = st.selectbox(\"Sex\", [\"M\", \"F\"])\nchest_pain = st.selectbox(\"Chest Pain Type\", [\"ATA\", \"NAP\", \"TA\", \"ASY\"])\nresting_bp = st.number_input(\"Resting Blood Pressure (mm Hg)\", 80, 200, 120)",
+        "peekOfCode": "model = joblib.load(\"knn_heart.pkl\")\nscaler = joblib.load(\"heart_scaler.pkl\")\nexpected_columns = joblib.load(\"heart_columns.pkl\")\nst.title(\"Heart Stroke Prediction by Zugnu❤️\")\nst.markdown(\"Provide the following details to check your heart stroke risk:\")\n# Collect user input\nage = st.slider(\"Age\", 18, 100, 40)\nsex = st.selectbox(\"Sex\", [\"M\", \"F\"])\nchest_pain = st.selectbox(\"Chest Pain Type\", [\"ATA\", \"NAP\", \"TA\", \"ASY\"])\nresting_bp = st.number_input(\"Resting Blood Pressure (mm Hg)\", 80, 200, 120)",
         "detail": "app",
         "documentation": {}
     },
